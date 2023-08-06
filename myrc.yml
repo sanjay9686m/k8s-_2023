@@ -13,7 +13,7 @@ spec:
         app: mynginx
     spec:
       containers:
-        - name: myc1_san
+        - name: mycone
           image: nginx
           ports:
             - containerPort: 80
