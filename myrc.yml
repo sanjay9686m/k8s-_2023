@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: sanjay_rc
+  name: sanjayRC
 spec:
   replicas: 3
   selector:
