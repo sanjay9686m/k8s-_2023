@@ -1,0 +1,22 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: myjavaapp-deployment
+  labels:
+    app: myjavaapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myjavaapp
+  template:
+    metadata:
+      labels:
+        app: myjavaapp
+    spec:
+      containers:
+      - name: myjavaappcontainer
+        image: nginx
+        ports:
+        - containerPort: 80
+        
