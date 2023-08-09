@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hr 
+  labels:
+    department: hrpod
+    manager: sanjay
+spec:
+  containers:
+  - name: abc
+    image: nginx
+    
