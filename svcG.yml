@@ -1,0 +1,10 @@
+apiVersion:
+kind: Service
+metadata:
+  name: myapp-svc
+spec:
+  selector:
+    app: myapp
+  ports:
+  - port: 5000
+    targetPort: 80
