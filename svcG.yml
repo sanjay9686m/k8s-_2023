@@ -1,4 +1,4 @@
-apiVersion:
+apiVersion: v1
 kind: Service
 metadata:
   name: myapp-svc
@@ -8,3 +8,4 @@ spec:
   ports:
   - port: 5000
     targetPort: 80
+    

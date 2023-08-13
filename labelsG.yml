@@ -9,4 +9,3 @@ spec:
   containers:
   - name: abc
     image: nginx
-    
