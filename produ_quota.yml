@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: prodequota
+  namespace: prod
+spec: 
+  hard:
+    pods: "3"
+    services: "2"
