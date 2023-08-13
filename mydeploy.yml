@@ -15,8 +15,7 @@ spec:
         app: myjavaapp
     spec:
       containers:
-      - name: myjavaappcontainer
+      - name: myjavaapp-container
         image: nginx
         ports:
-        - containerPort: 80
-        
+        - containerPort: 80        

@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: myc1
-        image: nginx
+        image: nginx 
