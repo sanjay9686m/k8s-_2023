@@ -1,0 +1,24 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata:
+  name: node-app-deployment
+spec:
+  replicas: 1 
+  selector: 
+    matchLabels: 
+      anything: node-app 
+  template: 
+    metadata:
+      labels:
+        anything: node-app
+    spec: 
+      containers:
+        - name: node-app-container 
+          image: YourDockerHubName/node-image
+          volumeMounts:
+            - mountPath: /app/userData
+              name: userData-volume
+      volumes:
+        - name: userData-volume
+          persistentVolumeClaim:
+            claimName: host-pvc
