@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: PersistentVolume
+metadata:
+  name: mypv1
+spec:
+  storageClassName: sanjay1
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 3Gi
+  hostPath:
+    path: /sanjaytempdata
