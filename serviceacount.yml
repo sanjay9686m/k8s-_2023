@@ -10,3 +10,4 @@ spec:
 
 ---
 #kubectl create sa sanjay
+#kubectl get sa 
