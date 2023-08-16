@@ -7,3 +7,6 @@ spec:
       - name: first-containers
         image: nginx
    serviceAccountName: sanjay
+
+---
+#kubectl create sa sanjay
